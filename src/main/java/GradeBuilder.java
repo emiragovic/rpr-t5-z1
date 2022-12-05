@@ -1,13 +1,13 @@
 public class GradeBuilder {
-    final String ime;
-    double kvizovi = 0;
-    double zadace = 0;
-    double parcijalni = 0;
-    double zavrsni = 0;
-    double projekat = 0;
-    double usmeni = 0;
-    double prisustvo = 0;
-    double aktivnost = 0;
+    private final String ime;
+    private double kvizovi = 0;
+    private double zadace = 0;
+    private double parcijalni = 0;
+    private double zavrsni = 0;
+    private double projekat = 0;
+    private double usmeni = 0;
+    private double prisustvo = 0;
+    private double aktivnost = 0;
 
     public GradeBuilder(String val){
         ime = val;
@@ -55,5 +55,41 @@ public class GradeBuilder {
     public GradeBuilder aktivnost(double val) {
         aktivnost = val;
         return this;
+    }
+
+    public String getIme() {
+        return ime;
+    }
+
+    public double getKvizovi() {
+        return kvizovi;
+    }
+
+    public double getZadace() {
+        return zadace;
+    }
+
+    public double getParcijalni() {
+        return parcijalni;
+    }
+
+    public double getZavrsni() {
+        return zavrsni;
+    }
+
+    public double getProjekat() {
+        return projekat;
+    }
+
+    public double getUsmeni() {
+        return usmeni;
+    }
+
+    public double getPrisustvo() {
+        return prisustvo;
+    }
+
+    public double getAktivnost() {
+        return aktivnost;
     }
 }

@@ -10,15 +10,15 @@ public class Grade {
     private final double aktivnost;
 
     public Grade(GradeBuilder builder) {
-        ime = builder.ime;
-        kvizovi = builder.kvizovi;
-        zadace = builder.zadace;
-        parcijalni = builder.parcijalni;
-        zavrsni = builder.zavrsni;
-        projekat = builder.projekat;
-        usmeni = builder.usmeni;
-        prisustvo = builder.prisustvo;
-        aktivnost = builder.aktivnost;
+        ime = builder.getIme();
+        kvizovi = builder.getKvizovi();
+        zadace = builder.getZadace();
+        parcijalni = builder.getParcijalni();
+        zavrsni = builder.getZavrsni();
+        projekat = builder.getProjekat();
+        usmeni = builder.getUsmeni();
+        prisustvo = builder.getPrisustvo();
+        aktivnost = builder.getAktivnost();
     }
 
     @Override
